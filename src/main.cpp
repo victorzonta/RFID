@@ -34,7 +34,7 @@ void loop() {
   Serial.println();
   Serial.print("RELE Status : ");
   content.toUpperCase();
-  if ((content.substring(1) == "D3 E0 24 1C") || (content.substring(1) == "3A 75 64 A3")){           
+  if ((content.substring(1) == "id do cartao") || (content.substring(1) == "id do cartao")){           
     digitalWrite(RELE, !digitalRead(RELE));   
   }
   
